@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+/*////////////////////////
+Hier maak ik ook even een aanpassing zodat ik iets heb om in een pull request te vergelijken. Hopelijk werkt dit zo!
+
+Vragen:
+
+1. Waarom gaat alles links buiten beeld als ik mijn fenster kleiner maak?
+2. Waarom is de "Check beschikbaarheid" button een fractie groter dan het input-veld?
+3. Kan ik ervoor zorgen dat het input-veld geen rood randje krijgt bij focus?
+4. Ik besteed soms véél te veel tijd om alles precies op de perfecte plek te krijgen. Zou ik in de echte wereld meer info toegekregen krijgen qua lettergrote en afstanden en zo? Of moet ik het inderdaad gewoon op deze manier doen, soort van gokkend naar aanleiding van een beeld? Hoeveel van de precieze details mag ik gewoon loslaten als ze niet perfect zijn?
+
+
+////////////////////////*/
+    
+
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typography
+    3. Areas
+        3.1 Header
+        3.2 Testimonials
+        3.3 Support
+        3.4 FAQ
+        3.5 Footer
+////////////////////////////////////////////////////////////////////////*/
+
+
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+:root {
+    --color-shadow-grey: #899CA0;
+    --color-main-green: #1C2B32;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a:link {
+    color: var(--color-shadow-grey);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    color: var(--color-main-green);
+    font-size: 14px;
+}
+
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+
+
+
+/*///////////// 3.1 Header /////////////*/
+header {
+    background-image: url("../assets/images/mountains.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header-section {
+    text-align: center;
+    max-width: 1000px;
+    position: relative;
+    left: calc(50% - 500px);
+    top: 80px;
+}
+
+.hero-title {
+    font-size: 88px;
+    font-weight: 700;
+}
+
+.hero-title + p {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 13px;
+}
+
+.availability {
+    margin-bottom: 400px;
+    padding: 20px 30px 20px 20px;
+}
+
+input.availability {
+    border: 2px solid var(--color-main-green);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background: none;
+    padding-right: 80px;
+    margin-right: -7px;
+    margin-left: 30px;
+}
+
+
+button.availability {
+    border: 1px solid var(--color-main-green);
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: var(--color-main-green);
+    color: white;
+}
+
+form.availability {
+    margin-bottom: 0;
+}
+
+
+/*////////////// Main //////////////*/
+main {
+    max-width: 1000px;
+    margin-left: calc(50% - 500px);
+}
+
+main h2 {
+    text-align: center;
+    font-size: 27px;
+}
+
+section > h2 {
+        margin: 50px 0;
+}
+
+
+
+/*///////////// 3.2 Testimonials /////////////*/
+.quote {
+    border-radius: 10px;
+    box-shadow: 0 3px 10px var(--color-shadow-grey);
+    margin: 50px 0;
+}
+
+.quote .mark {
+    position: relative;
+    top: 33px;
+    left: 82px;
+}
+
+.quote blockquote {
+    margin-left: 127px;
+    margin-right: 108px;
+}
+
+.quote figcaption {
+    margin-left: 127px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+}
+
+.quote figcaption * {
+    vertical-align: middle;
+}
+
+.quote figcaption img {
+    width: 44px;
+    border-radius: 50px;
+}
+
+.quote-author {
+    display: inline;
+    font-style: italic;
+    margin-left: 20px;
+}
+
+
+
+/*///////////// 3.3 Support /////////////*/
+.support img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.support p {
+    margin: 20px 0;
+    font-size: 13px;
+}
+
+.contact {
+    font-family: inherit;
+    background-color: var(--color-main-green);
+    color: white;
+    padding: 23px;
+    border-radius: 50px;
+}
+
+
+/*///////////// 3.4 FAQ /////////////*/
+.faq details {
+    margin: 32px;
+}
+
+.faq {
+    margin-bottom: 50px;
+}
+
+details:hover {
+    cursor: pointer;
+}
+
+details p {
+    background-color: var(--color-shadow-grey);
+    border-radius: 10px;
+    padding: 25px 30px;
+    color: white;
+}
+
+
+
+/*///////////// 3.5 Footer /////////////*/
+footer {
+    width: 100%;
+    background-color: var(--color-main-green);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
